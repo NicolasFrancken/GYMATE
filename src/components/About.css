@@ -1,0 +1,53 @@
+.About-section {
+  box-sizing: border-box;
+  background-color: var(--lightgrey);
+  padding: 12rem 12rem 6rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.About-title{
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.About-title span {
+  color: var(--orange1);
+}
+
+.About-text {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.About-text p {
+  margin: 1rem 0 0 0;
+}
+
+.About-text span {
+  color: var(--orange1);
+}
+
+.About-bold {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+  .About-section {
+    padding: 9rem 3rem 3rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .About-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .About-text {
+    font-size: 1rem ;
+  }
+}
