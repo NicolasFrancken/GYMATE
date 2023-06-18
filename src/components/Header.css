@@ -1,0 +1,169 @@
+.Header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  box-sizing: border-box;
+  padding: 0 6rem;
+  background-color: rgb(17, 17, 17);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 100;
+}
+
+.Header-logo {
+  text-decoration: none;
+  color: var(--orange1);
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.Header-logo span {
+  color: white;
+}
+
+.Header-btn1,
+.Header-btn2 {
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Header-btn1 {
+  transition: color 0.3s ease;
+}
+
+.Header-btn1:hover {
+  color: var(--orange1);
+}
+
+.Header-btn2 {
+  background-color: var(--orange1);
+  padding: 0.7rem 2rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.Header-btn2:hover {
+  background-color: var(--orange2);
+}
+
+.hamburger {
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  background-color: white;
+  height: 4px;
+  width: 32px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.mobile-nav {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 6rem;
+  box-sizing: border-box;
+  background-color: var(--lightgrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -100vw;
+  transition: transform 0.5s;
+}
+
+.mobile-nav a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+
+.active {
+  transform: translateX(-100vw);
+}
+
+@media only screen and (max-width: 1280px) {
+  .Header-container {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .Header-container {
+    padding: 0 1rem;
+  }
+  .Header-logo {
+    font-size: 2rem;
+  }
+  .Header-nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.firstAnimateBar1 {
+  animation: flipBar1 0.5s forwards;
+}
+.firstAnimateBar2 {
+  animation: fadeBar2 0.5s forwards;
+}
+.firstAnimateBar3 {
+  animation: flipBar3 0.5s forwards;
+}
+
+
+@keyframes fadeBar2 {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes flipBar1 {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+@keyframes flipBar3 {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}

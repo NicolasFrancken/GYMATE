@@ -1,0 +1,209 @@
+.Join-container {
+  background-color: var(--superlightgrey);
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 12rem 6rem 6rem 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Join-left {
+  width: 30rem;
+  color: var(--black);
+}
+
+.Join-left h2 {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.Join-left p {
+  margin: 1rem 0 2rem 0;
+  font-size: 1.3rem;
+}
+
+.Join-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Join-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightgrey);
+  padding: 2rem;
+  width: 100%;
+  margin-left: 6rem;
+  box-shadow: 0 0 20px black;
+  border-radius: 20px;
+  border: 3px solid var(--lightgrey);
+}
+
+.premium-card {
+  border: 3px solid var(--orange1);
+}
+
+.Join-card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--superlightgrey);
+  height: 70%;
+}
+
+.Join-cardtitle-h3 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.Join-cardtitle-h3 span {
+  color: var(--orange1);
+}
+
+.Join-p-price {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.Join-p-price span {
+  font-size: 4rem;
+  color: var(--orange1);
+  font-weight: 500;
+}
+
+.Join-select-a {
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--orange1);
+  width: 100%;
+  padding: 0.5rem 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  transition: background-color 0.3s ease;
+}
+
+.Join-select-a:hover {
+  background-color: var(--orange2);
+}
+
+.Join-card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40%;
+}
+
+.Join-p-info {
+  font-size: 1.3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.Join-p-info span {
+  color: var(--orange1);
+}
+
+/* * {
+  outline: 1px solid black;
+} */
+
+@media only screen and (max-width: 1670px) {
+  .Join-container {
+    padding: 9rem 3rem 3rem 3rem;
+  }
+  .Join-left h2 {
+    font-size: 3rem;
+  }
+  .Join-cardtitle-h3 {
+    font-size: 3rem;
+  }
+  .Join-p-info {
+    font-size: 1.1rem;
+  }
+  .Join-card {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .Join-card {
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .Join-container {
+    flex-direction: column;
+    height: fit-content;
+    padding: 9rem 3rem 3rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .Join-left {
+    width: 36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Join-right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Join-card {
+    margin: 0;
+    width: 30rem;
+    padding: 3rem;
+  }
+  .premium-card {
+    margin-bottom: 2rem;
+  }
+  .Join-p-info {
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 781px) {
+  .Join-left {
+    width: 100%;
+  }
+  .Join-card {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .Join-container h2 {
+    font-size: 2.3rem;
+  }
+  .Join-card {
+    padding: 1rem;
+  }
+  .Join-cardtitle-h3 {
+    font-size: 2.3rem;
+  }
+  .Join-container p {
+    font-size: 1rem;
+  }
+  .Join-p-price span {
+    font-size: 3rem;
+  }
+  .Join-select-a {
+    font-size: 1.7rem;
+  }
+  .Join-p-info {
+    font-size: 1rem;
+  }
+}
